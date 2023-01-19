@@ -1,2 +1,2 @@
-# Cadastro_AluraBooks-API-ViaCEP
-Projeto realizado para o aprendizado e melhor entendimento de APIs, preenchendo os campos do endereço com apenas o CEP.  
+# js-consumindo-dados-api
+Repositório do treinamento "JavaScript: Consumindo e tratando dados de uma API" da Alura Cursos Online.
