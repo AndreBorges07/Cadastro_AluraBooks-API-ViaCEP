@@ -25,32 +25,13 @@ async function buscaEndereco(cep){
 
     } catch (erro) {
 
-        if (cep = /^[a-z]/){
-                        
-            mensagemErro.innerHTML = `<p>Tem letra nesse CEP, corrija por favor.`;
-            console.log(erro);
-            
-            
-        } else 
-        
-        
-        if (cep.length < 8 || cep.length > 9){
-                        
-            mensagemErro.innerHTML = `<p>Está faltando número ou possui números demais</p>`;
-
-            console.log(erro);
-                    
-        } else 
-
-       
+             
+            if (cep != /^[0-9]{5}?-[0-9]{3}$/){
+                            
+                mensagemErro.innerHTML = `<p>CEP inválido. Um CEP válido contém 8 números, sem espaço ou letras. Insira o CEP novamente.</p>`;
+                console.log(erro);
                 
-        if (cep != /^[0-9]{5}?-[0-9]{3}$/){
-                        
-            mensagemErro.innerHTML = `<p>Formato inválido. Um CEP válido contém 8 números, sem espaço e letras. Insira o CEP novamente.</p>`;
-            console.log(erro);
-            
-        }
-        else{
+            } else {       
             
             mensagemErro.innerHTML = `<p>CEP inválido. Tente novamente!</p>`;
             console.log(erro);
