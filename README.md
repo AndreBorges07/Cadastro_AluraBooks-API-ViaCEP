@@ -6,7 +6,7 @@
 # Descrição
 Projeto feito para o desenvolvimento e aprendizado de JavaScript com o uso de APIs. 
 <br>Utilizamos a API https://viacep.com.br/, que faz com que ao digitar o CEP no espaço "CEP", este preenche o restante dos campos do endereço. 
-<br>Acesse o projeto aqui: 
+<br>Acesse o projeto aqui: https://cadastro-alura-books-api-via-cep.vercel.app/
 
 # Tecnologias utilizadas
 
