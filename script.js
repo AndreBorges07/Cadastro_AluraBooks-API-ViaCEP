@@ -22,16 +22,8 @@ async function buscaEndereco(cep){
 
         console.log(consultaCEPConvertida);
         return consultaCEPConvertida;
+
     } catch (erro) {
-
-        if (cep.length < 8 || cep.length > 9){
-                        
-            mensagemErro.innerHTML = `<p>Está faltando número ou possui números demais</p>`;
-
-            console.log(erro);
-            
-            
-        } else 
 
         if (cep = /^[a-z]/){
                         
@@ -40,6 +32,17 @@ async function buscaEndereco(cep){
             
             
         } else 
+        
+        
+        if (cep.length < 8 || cep.length > 9){
+                        
+            mensagemErro.innerHTML = `<p>Está faltando número ou possui números demais</p>`;
+
+            console.log(erro);
+                    
+        } else 
+
+       
                 
         if (cep != /^[0-9]{5}?-[0-9]{3}$/){
                         
@@ -59,15 +62,15 @@ async function buscaEndereco(cep){
 
 
 var cep = document.getElementById('cep');
-cep.addEventListener("focusout", () => limparCampos()); //Limpa os campos 
+cep.addEventListener("focusout", () => limparEnd()); //Limpa os campos 
 cep.addEventListener("focusout", () => buscaEndereco(cep.value));
 
-function limparCampos() {
+function limparEnd() {
     
-        cidade.value = "";
-        logradouro.value = "";
-        estado.value = "";
-        bairro.value = "";
+        cidade.value = " ";
+        endereco.value = " ";
+        estado.value = " ";
+        bairro.value = " ";
     
         
 } 
