@@ -26,7 +26,9 @@ Projeto feito para o desenvolvimento e aprendizado de JavaScript com o uso de AP
     <li>Foram feitas 45 de 45 atividades</li>
 </ul>
 
+# Certificado: JAVASCRIPT: CONSUMINDO E TRATANDO DADOS DE UMA API
 
+Acesse aqui: https://cursos.alura.com.br/certificate/andreBorges07/javascript-consumindo-tratando-dados-api
 
 
 
